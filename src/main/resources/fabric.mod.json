@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorialmod",
+	"version": "${version}",
+	"name": "Tutorial Mod",
+	"description": "Estoy siguiendo un tuto de mods en YT",
+	"authors": [
+		"PdroRB"
+	],
+	"contact": {
+		"homepage": "https://PdroRB.net/",
+		"sources": "https://github.com/PdroRB"
+	},
+	"license": "MIT",
+	"icon": "assets/tutorialmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.pp.tutorialmod.TutorialMod"
+		],
+		"fabric-datagen": [
+			"net.pp.tutorialmod.TutorialModDataGenerator"
+		],
+		"client": [
+			"net.pp.tutorialmod.TutorialModClient"
+		]
+	},
+	"mixins": [
+		"tutorialmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
